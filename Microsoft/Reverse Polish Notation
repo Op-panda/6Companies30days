@@ -10,8 +10,8 @@ public:
 	stack<int> s;
 	for(auto& t : tokens) 
 		if(t == "+" || t == "-" || t == "*" || t == "/") {
-			long int op1 = s.top(); s.pop();    #operand1
-			long int op2 = s.top(); s.pop();    #operand2
+			long int op1 = s.top(); s.pop();    //operand1
+			long int op2 = s.top(); s.pop();    //operand2
 			if(t == "+") op1 = op2 + op1;
 			if(t == "-") op1 = op2 - op1;
 			if(t == "/") op1 = op2 / op1;
